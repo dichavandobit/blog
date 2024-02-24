@@ -1,21 +1,24 @@
-<script setup>
-const props = defineProps(['title', 'subtitle', 'published'])
 
-</script>
 <template>
     <div class="col">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">  {{ title }} </h5>
+                <h5 class="card-title">  {{ this.title }} </h5>
                 <p class="card-text">
-                    {{ subtitle }}
+                    {{ description }}
                 </p>
                 <h6>Publicado: {{ published }}</h6>
             </div>
         </div>
     </div>
 </template>
-
+<script>
+import axios from 'axios';
+//const props = defineProps(['title', 'subtitle', 'published'])
+export default {
+  props: ['id', 'title', 'description', 'published']
+};
+</script>
 <style>
 .card{
   border: 2px solid #888831; 
