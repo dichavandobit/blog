@@ -43,6 +43,9 @@ export default {
     display: inline-block; /* Para que a linha não ocupe toda a largura */
     margin-bottom: 10px; /* Espaçamento opcional abaixo do h6 */
 }
+
+</style>
+<style scoped>
 .card:hover {
       transform: scale(1.02); /* Aumenta o tamanho do card ao passar o mouse sobre ele */
       transition: transform 0.4s ease; /* Adiciona uma transição suave */
