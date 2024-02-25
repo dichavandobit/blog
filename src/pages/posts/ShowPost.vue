@@ -9,6 +9,7 @@
                     disputationi eu sit. Vide electram sadipscing et per. Praesent vel viverra nisi. Mauris aliquet nunc non
                     turpis scelerisque, eget.</p>
                 <p></p>
+                
                 <p>Mussum Ipsum, cacilds vidis litro abertis. Nullam volutpat risus nec leo commodo, ut interdum diam
                     laoreet. Sed non consequat odio. Detraxit consequat et quo num tendi nada. Bota 1 metro de cachacis
                     a&iacute; pra viagem! Pra l&aacute;, depois divoltis porris, paradis.</p>
@@ -28,7 +29,9 @@ export default {
     props: ['id'],
     data() {
         return {
-            post: null
+            post: {
+                title: ''
+            }
         };
     },
     async created() {
