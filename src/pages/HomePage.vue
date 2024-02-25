@@ -5,6 +5,7 @@
     <div class="row col-md-9 mx-auto">
       <div class="col">
         <card-post v-for="post in posts" 
+        :id="post.id"
         :title="post.title"
         :description="post.description"
         :published="post.published"
