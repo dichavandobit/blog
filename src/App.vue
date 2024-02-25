@@ -1,14 +1,15 @@
 
 
 <template>
-  
-  <figure class="figure">
-    <img src="./assets/logo.gif" class="figure-img img-fluid rounded" alt="...">
-  </figure>
+
+
   <navbar></navbar>
-  <router-view></router-view>
+
+  <transition>
+      <router-view :key="$route.fullPath"></router-view>
+    </transition>
   <div class="text-center footer">
-      © 2024 Copyright: <a href="https://dichavandobit.com"> Dichavandobit.com</a>
+    © 2024 Copyright: <a href="https://dichavandobit.com"> Dichavandobit.com</a>
   </div>
 </template>
 <script>
@@ -29,5 +30,15 @@ export default {
 
 .logo:hover {
   filter: drop-shadow(0 0 0.5em #708028);
+}
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  transition: opacity 0.5s ease;
+  opacity: 0;
 }
 </style>
