@@ -1,7 +1,7 @@
 
 <template>
     <div class="col">
-        <div class="card">
+        <div class="card"  @click="goToPost">
             <div class="card-body">
                 <h5 class="card-title">  {{ this.title }} </h5>
                 <p class="card-text">
@@ -13,10 +13,15 @@
     </div>
 </template>
 <script>
-import axios from 'axios';
-//const props = defineProps(['title', 'subtitle', 'published'])
+
 export default {
-  props: ['id', 'title', 'description', 'published']
+  props: ['id', 'title', 'description', 'published'],
+  methods: {
+    goToPost() {
+      console.log(this.id)
+      this.$router.push({ name: 'showPost', params: { id: this.id }});
+    }
+  }
 };
 </script>
 <style>
