@@ -40,7 +40,7 @@
 @media screen and (max-width: 600px) {
   .card {
     border: none; /* Remove a borda em telas menores */
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 .card-header{
