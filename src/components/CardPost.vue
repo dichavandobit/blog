@@ -26,30 +26,33 @@ export default {
 </script>
 <style>
 .card{
-  border: 2px solid #888831; 
-  border-style: groove ;
+  border: 2px solid var(--color-blue-1); 
+  
   column-rule-style: inset;
-  background-color: #405010;
-  color: #d0d058;
+  background-color: var(--color-blue-2);
+  color: var(--color-purple-1);
   margin-bottom: 10px;
   height: auto;
 }
 .card-text{
-  color:  #d0d058;
+  color:  var(--color-purple-1);
   font-size: 1rem;
 }
 .card-title{
-    border-bottom: 2px solid #888831; /* Espessura e cor da linha */
-    display: inline-block; /* Para que a linha não ocupe toda a largura */
-    margin-bottom: 10px; /* Espaçamento opcional abaixo do h6 */
+    border-bottom: 2px solid var(--color-blue-1); 
+    display: inline-block; 
+    margin-bottom: 10px; 
 }
 
 </style>
 <style scoped>
 .card:hover {
-      transform: scale(1.02); /* Aumenta o tamanho do card ao passar o mouse sobre ele */
-      transition: transform 0.4s ease; /* Adiciona uma transição suave */
-      background-color: #455711 ; 
-      border: 2px solid #d0d058; 
+      transform: scale(1.02); 
+      transition: transform 0.4s ease; 
+    
+      border: 2px solid var(--color-purple-1);
+      .card-title{
+          border-bottom: 2px solid var(--color-purple-1); 
+      }
 }
 </style>

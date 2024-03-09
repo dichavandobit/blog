@@ -47,15 +47,15 @@ export default {
     padding-bottom: 20px;
 }
 .nav-link {
-  color: #708028;
+  color: #494d7e;
 }
 
 .active {
-  color: #d0d058 !important;
-  border-bottom: 2px solid #d0d058;
+  color: #c69fa5 !important;
+  border-bottom: 2px solid #c69fa5;
 }
 
 .nav-link:hover {
-  color: #708028;
+  color: #c69fa5;
 }
 </style>
