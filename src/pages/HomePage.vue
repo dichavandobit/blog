@@ -8,7 +8,7 @@
         :id="post.id"
         :title="post.title"
         :description="post.description"
-        :published="post.published"
+        :published="post.createdAt"
          ></card-post>
       </div>
     </div>
@@ -29,7 +29,8 @@ export default {
     },
     async created() {
         try {
-            const response = await axios.get('https://65d950cfc96fbb24c1bce62a.mockapi.io/posts/');
+            const url = import.meta.env.VITE_API_URL ?? 'http://localhost:3030'
+            const response = await axios.get(url+'/posts/');
             this.posts = response.data
         } catch (error) {
             alert(error);

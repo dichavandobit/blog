@@ -26,7 +26,7 @@ export default {
 </script>
 <style>
 .card{
-  border: 2px solid var(--color-blue-1); 
+  border: 3px solid var(--color-blue-1); 
   
   column-rule-style: inset;
   background-color: var(--color-blue-2);
@@ -50,7 +50,7 @@ export default {
       transform: scale(1.02); 
       transition: transform 0.4s ease; 
     
-      border: 2px solid var(--color-purple-1);
+      border: 3px solid var(--color-purple-1);
       .card-title{
           border-bottom: 2px solid var(--color-purple-1); 
       }
